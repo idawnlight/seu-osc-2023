@@ -51,7 +51,7 @@ void* MR_Map_Feeder(void* args) {
         char* file_name = malloc(sizeof(char) * 100);
         sprintf(file_name, "testcase/sample%d.txt", i);
         enqueue(map_queue, file_name);
-        printf("Enqueued %s\n", file_name);
+        // printf("Enqueued %s\n", file_name);
     }
     return NULL;
 }
@@ -60,7 +60,7 @@ void* MR_Mapper() {
     char* file_name = malloc(sizeof(char) * 100);
     dequeue(map_queue, &file_name);
     while (file_name != NULL) {
-        printf("Mapping %s\n", file_name);
+        // printf("Mapping %s\n", file_name);
         mapper(file_name);
         dequeue(map_queue, &file_name);
     }

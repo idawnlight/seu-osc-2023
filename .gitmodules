@@ -1,0 +1,6 @@
+[submodule "Xv6-Lottery/xv6-public"]
+	path = Xv6-Lottery/xv6-public
+	url = https://gitlab.seu.edu.cn/idawnlight/xv6-public.git
+[submodule "Xv6-Syscall/src"]
+	path = Xv6-Syscall/src
+	url = https://gitlab.seu.edu.cn/idawnlight/xv6-public.git
